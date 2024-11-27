@@ -1,0 +1,41 @@
+nav {
+  background-color: var(--nav-bg-color);
+  padding: 1rem 2rem;
+  border: 1px solid rgb(78, 78, 78);
+  margin: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav ul li a {
+  background: rgb(7, 37, 2);
+  color: greenyellow;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid greenyellow;
+}
+
+nav header h1 {
+  color: var(--heading1-color);
+  font-size: 1.75rem;
+}
+
+nav header p {
+  color: var(--p-color-main);
+  font-size: 0.85rem;
+}

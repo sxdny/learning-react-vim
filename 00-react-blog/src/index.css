@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  font-family: 'Inter', sans-serif;
+
+  /* Variables */
+  --main-bg-color: black;
+  --heading1-color: rgb(0, 0, 0);
+
+  --dark-p-color: rgb(229, 229, 229);
+  --p-color-main: rgb(31, 31, 31);
+
+  /* Navbar */
+  --nav-bg-color: rgb(240, 240, 240);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
