@@ -1,0 +1,58 @@
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  gap: 1rem;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+form div label {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+form div input {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 2px solid rgb(162, 162, 162);
+  border-radius: 0.15rem;
+  margin-right: auto;
+}
+
+form div input:focus {
+  border: 2px solid rgb(162, 162, 162);
+}
+
+.ok-message {
+  background-color: rgb(6, 67, 6);
+  color: rgb(130, 251, 60);
+  padding: 1rem 1.5rem;
+  font-size: 1.15rem;
+}
+
+form div textarea {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 2px solid rgb(162, 162, 162);
+  border-radius: 0.15rem;
+  resize: none;
+}
+
+form > button {
+  background-color: rgb(119, 255, 0);
+  padding: 0.5rem 2rem;
+  font-size: 1.25rem;
+  border: 2px solid black;
+  margin-right: auto;
+}
+
+.errMessage {
+  color: rgb(225, 8, 4);
+  
+}
+
