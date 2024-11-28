@@ -11,9 +11,6 @@ export default function CreatePost() {
 
   useEffect(() => {
     localStorage.setItem("posts", JSON.stringify(posts));
-    if (posts) {
-      setPosts(posts);
-    }
   }, [posts]);
 
   const title = useRef();
