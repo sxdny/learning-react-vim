@@ -4,7 +4,10 @@ import Nav from "./Nav";
 import "./css/CreatePosts.css";
 
 export default function CreatePost() {
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState(() => {
+    const savedPosts = localStorage.getItem('posts');
+    return savedPosts ? JSON.parse(savedPosts) : [];
+  });
 
   useEffect(() => {
     localStorage.setItem("posts", JSON.stringify(posts));
