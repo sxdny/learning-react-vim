@@ -1,3 +1,49 @@
 main {
   margin: 1rem;
 }
+
+main > div.heading-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.post {
+  border-bottom: 1px solid rgb(66, 66, 66);
+  padding: 2rem 1rem;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  transition: .25s ease;
+}
+
+.post:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.post > header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.post > header > p {
+  font-size: 0.85rem;
+  color: gray;
+}
+
+.post > .content {
+  font-size: 1.25rem;
+}

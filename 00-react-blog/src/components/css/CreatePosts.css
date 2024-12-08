@@ -53,6 +53,9 @@ form > button {
 
 .errMessage {
   color: rgb(225, 8, 4);
-  
+}
+
+.hide {
+  display: none;
 }
 

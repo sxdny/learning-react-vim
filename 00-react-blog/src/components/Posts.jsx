@@ -14,19 +14,25 @@ export default function Posts() {
 
   return (
     <main>
-      <h1>List of posts</h1>
+      <div className='heading-div'>
+        <h1>List of posts</h1>
+        <p>All the posts of the blog.</p>
+      </div>
+      <div className='posts-list'>
       {
         posts.map((post) => {
           return (
-            <div key={post.title}>
-              <h1> {post.title} </h1>
-              <p> {post.author} </p>
-              <p> {post.content} </p>
+            <div className='post' key={post.title}>
+              <header>
+                <h1 > {post.title} </h1>
+                <p>Author: {post.author} </p>
+              </header>
+              <p className='content'> {post.content} </p>
             </div>
-          )
-          
+          ) 
         })
       }
+      </div>
     </main>
   );
 }
